@@ -53,3 +53,6 @@ body {
         transform: translateY(100PX);
     }
 }
+.floating-card:hover{
+animation-play-state:paused;
+}
