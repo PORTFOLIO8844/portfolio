@@ -1,0 +1,58 @@
+body{
+
+background:#000;
+color:white;
+
+min-height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.glass-nav{
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(10px);
+}
+
+.contact-section{
+
+margin-top:100px;
+}
+
+.neon-card{
+
+width:100%;
+max-width:600px;
+
+padding:30px;
+
+border-radius:20px;
+
+background:#111;
+
+box-shadow:
+0 0 10px #00ffff;
+animation:pulse 4s infinite;
+}
+
+@keyframes pulse{
+
+0%{
+box-shadow:
+0 0 10px #00ffff;
+}
+
+50%{
+box-shadow:
+0 0 30px #00ffff,
+0 0 60px #00ffff;
+}
+
+100%{
+box-shadow:
+0 0 10px #00ffff;
+}
+}

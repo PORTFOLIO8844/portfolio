@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    color: white;
+    min-height: 100vh;
+
+    background: linear-gradient(-45deg,
+            #0f172a,
+            #1e293b,
+            #2563eb,
+            #06b6d4);
+
+    background-size: 400% 400%;
+
+    animation: bgMove 15s ease infinite;
+}
+
+/* Animated Background */
+
+@keyframes bgMove {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Sticky Navbar */
+
+.glass-nav {
+
+    background: rgba(255, 255, 255, 0.1);
+
+    backdrop-filter: blur(15px);
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero */
+
+.hero-section {
+
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+
+/* Profile */
+
+.profile-img {
+
+    width: 220px;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid white;
+
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+
+    transition: .5s;
+}
+
+.profile-img:hover {
+
+    transform:
+        rotateY(15deg) scale(1.05);
+}
+
+/* 3D Cards */
+
+.card3d {
+
+    background: rgba(255, 255, 255, 0.1);
+
+    backdrop-filter: blur(15px);
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+
+    transition: .5s;
+
+    transform-style: preserve-3d;
+}
+
+.card3d:hover {
+
+    transform:
+        rotateX(10deg) rotateY(10deg) ;
+}
+
+.card3d ul {
+
+    list-style: none;
+    padding-left: 0;
+}
+
+.card3d li {
+
+    margin: 10px 0;
+}
+
+.card3d a {
+
+    color: white;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+
+    background: rgba(255, 255, 255, 0.08);
+
+    backdrop-filter: blur(10px);
+}
+#linkedin:hover,#resume:hover,#GitHub:hover{
+color: rgb(47, 63, 62);
+}

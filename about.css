@@ -1,0 +1,55 @@
+body {
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        linear-gradient(135deg,
+            #1e293b,
+            #0f172a);
+
+    overflow: hidden;
+    color: white;
+}
+
+.glass-nav {
+
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(10px);
+}
+
+.about-section {
+
+    margin-top: 100px;
+}
+
+.floating-card {
+
+    padding: 40px;
+
+    background: rgba(255, 255, 255, .1);
+
+    backdrop-filter: blur(15px);
+
+    border-radius: 20px;
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+
+   
+
+    50% {
+        transform: translateX(-100px);
+    }
+
+    100% {
+        transform: translateY(100PX);
+    }
+}
